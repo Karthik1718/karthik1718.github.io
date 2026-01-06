@@ -1,92 +1,176 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TapForge Studio – Privacy Policy</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-            line-height: 1.6;
-            color: #333;
-        }
-        h1, h2 {
-            color: #222;
-        }
-        footer {
-            margin-top: 40px;
-            font-size: 14px;
-            color: #666;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Tap Escape | Karthik Labs</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at top, #1b2735, #090a0f);
+      color: #ffffff;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') center/cover no-repeat;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 800px;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      margin-bottom: 15px;
+      color: #ffcc00;
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.9;
+    }
+
+    .cta {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 14px 34px;
+      border-radius: 40px;
+      background: linear-gradient(90deg, #ffcc00, #ff9900);
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #ffcc00;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    /* GAMEPLAY */
+    .gameplay {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .gameplay img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    /* FEATURES */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+    }
+
+    .feature {
+      background: rgba(255, 255, 255, 0.06);
+      padding: 30px;
+      border-radius: 18px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .feature h3 {
+      color: #ffcc00;
+      margin-bottom: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  </style>
+
 </head>
 <body>
 
-<h1>Privacy Policy</h1>
+<!-- HERO -->
 
-<p><strong>TapForge Studio</strong> built the <strong>One Tap Escape</strong> game as a free arcade game. This application is provided at no cost and is intended for use as is.</p>
+<div class="hero">
+  <div class="hero-content">
+    <h1>One Tap Escape</h1>
+    <p>Survive the traffic. One tap at a time.</p>
+    <a class="cta" href="#">Coming Soon on Google Play</a>
+  </div>
+</div>
 
-<p>This page is used to inform visitors regarding our policies with the collection, use, and disclosure of personal information if anyone decides to use our application.</p>
+<!-- GAMEPLAY -->
 
-<h2>Information Collection and Use</h2>
+<section>
+  <h2>Gameplay</h2>
+  <div class="gameplay">
+    <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7" alt="Gameplay 1" />
+    <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" alt="Gameplay 2" />
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Gameplay 3" />
+  </div>
+</section>
 
-<p>The game itself does <strong>not collect or store any personal information</strong> directly.</p>
+<!-- FEATURES -->
 
-<p>However, the app uses third-party services that may collect information used to identify you. These services are used to show advertisements and improve app stability.</p>
+<section>
+  <h2>Why You'll Love It</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>One-Tap Control</h3>
+      <p>Instant lane changes with a single tap.</p>
+    </div>
+    <div class="feature">
+      <h3>Endless Challenge</h3>
+      <p>Speed increases as you survive longer.</p>
+    </div>
+    <div class="feature">
+      <h3>Minimal Design</h3>
+      <p>Clean visuals focused on pure gameplay.</p>
+    </div>
+    <div class="feature">
+      <h3>Rewarded Boosts</h3>
+      <p>Optional ads to continue your run.</p>
+    </div>
+  </div>
+</section>
 
-<h2>Third-Party Services</h2>
-
-<p>The app uses the following third-party services:</p>
-<ul>
-    <li>Google AdMob</li>
-    <li>Google Play Services</li>
-</ul>
-
-<p>These services may collect information such as device identifiers, advertising IDs, and crash data according to their own privacy policies.</p>
-
-<p>Links to their privacy policies:</p>
-<ul>
-    <li>
-        <a href="https://policies.google.com/privacy" target="_blank">
-            Google Privacy Policy
-        </a>
-    </li>
-</ul>
-
-<h2>Advertisements</h2>
-
-<p>One Tap Escape displays banner, interstitial, and rewarded advertisements. Rewarded ads are optional and provide in-game benefits when watched.</p>
-
-<h2>Children’s Information</h2>
-
-<p>This app is suitable for a general audience. We do not knowingly collect personally identifiable information from children.</p>
-
-<p>If you believe that a child has provided personal information, please contact us so we can take appropriate action.</p>
-
-<h2>Security</h2>
-
-<p>We value your trust. While we do not collect personal data directly, we rely on trusted third-party services that follow industry-standard security practices.</p>
-
-<h2>Changes to This Privacy Policy</h2>
-
-<p>This Privacy Policy may be updated from time to time. Any changes will be posted on this page.</p>
-
-<p><strong>Effective date:</strong> January 1, 2026</p>
-
-<h2>Contact Us</h2>
-
-<p>If you have any questions or suggestions about this Privacy Policy, you can contact us at:</p>
-
-<p>
-    📧 Email: <strong>karthikk1718@gmail.com</strong>
-</p>
+<!-- FOOTER -->
 
 <footer>
-    © 2026 Karthik Labs. All rights reserved.
+  © 2026 <strong>Karthik Labs</strong> · All rights reserved.
 </footer>
 
 </body>
